@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <title>Gujarat Police</title>
+    <link rel="stylesheet" href="http://localhost/criminaljustice/bootstrap.css">
+    <link rel="stylesheet" href="http://localhost/criminaljustice/status.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!-- <meta charset="utf-8"> -->
+    <!-- <title></title> -->
+
+
+      <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+<script type="text/javascript">
+
+
+
+  if(window.location == 'http://localhost:9966/#init')
+  {
+    setTimeout(
+      function(){
+
+  //  alert("huh");
+   //document.write();
+    document.getElementById('lbl').innerHTML="Share Your ID With Judicial Department";
+
+  // var r= document.getElementById('newp').innerHTML="<b>hey</b>";
+  // document.getElementById("lbl").appendChild(r);
+
+},10);
+}
+if(window.location == 'http://localhost:9966/')
+{
+  setTimeout(
+    function(){
+
+  //alert("h");
+  document.getElementById('lbl').innerHTML="Share Your ID With Crime Department";
+
+// var r= document.getElementById('newp').innerHTML="<b>hey</b>";
+// document.getElementById("lbl").appendChild(r);
+
+},10);
+
+
+}
+
+
+  function Share()
+  {
+     var id= document.getElementById('yourid').value;
+     // Email.send({
+     //      Host : "smtp.elasticemail.com",
+     //      Username : "pateljash77@gmail.com",
+     //      Password : "21F752C6DADF44744EF683AB96C08609821D",
+     //      To : 'degujaratpolice@gmail.com',
+     //      From : 'pateljash77@gmail.com',
+     //      Subject : "This is the subject",
+     //      Body : id
+     //  }).then(
+     //    message => alert(message)
+     //  );
+
+    if(window.location == 'http://localhost:9966/#init')
+    {
+    //  alert("1");
+      Email.send({
+          Host : "smtp.elasticemail.com",
+          Username : "degujaratpolice@gmail.com",
+          Password : "D24D36711DCEAC5B92C70DA4ABA5DAD2FA37",
+          To : 'dejudicialdepartment@gmail.com',
+          From : 'degujaratpolice@gmail.com',
+          Subject : "Connection ID to join virtual room",
+          Body : id
+      }).then(
+        message => alert(message + ", Your ID has been sent to Judicial Department.")
+      );
+    }
+    if(window.location == 'http://localhost:9966/')
+    {
+      // subject="hyy";
+      // body="hii";
+      // window.open('mailto:degujaratpolice@gmail.com?subject=subject&body=body');
+
+    //  alert("2");
+      Email.send({
+          Host : "smtp.elasticemail.com",
+          Username : "dejudicialdepartment@gmail.com",
+          Password : "60504C09F69058CCECFF19FBF7A17C61E99F",
+          To : 'degujaratpolice@gmail.com',
+          From : 'dejudicialdepartment@gmail.com',
+          Subject : "Connection ID to join virtual room",
+          Body : id
+      }).then(
+        message => alert(message + ", Your ID has been sent to Crime Department.")
+      );
+
+
+      // Email.send({
+      //      Host : "smtp.elasticemail.com",
+      //      Username : "pateljash77@gmail.com",
+      //      Password : "21F752C6DADF44744EF683AB96C08609821D",
+      //      To : 'degujaratpolice@gmail.com',
+      //      From : 'pateljash77@gmail.com',
+      //      Subject : "This is the subject",
+      //      Body : id
+      //  }).then(
+      //    message => alert(message)
+      //  );
+    }
+
+
+
+    //alert(location.pathname);
+
+
+
+        //document.getElementById('lbl').value="hii";
+         var dis=document.getElementById('share').style.visibility="hidden";
+     //var dis=document.getElementById('share').disabled=true;
+    //document.write();
+    // var id= document.getElementById('yourid').value;
+    // window.location.assign("http://localhost/depolice/sendmail.php?id="+id);
+    // return false;
+  }
+
+
+
+
+var vid = document.getElementById("vid");
+
+// vid.addEventListener("load",function() {
+//   alert("Starting to load video");
+// });
+
+
+function display(){
+  document.getElementById("disp").style.display='block';
+  document.getElementById("disp1").style.display='block';
+  // document.getElementById("disp2").style.display='block';
+  // document.getElementById("disp3").style.display='';
+  document.getElementById("disp4").style.display='';
+  if(window.location == 'http://localhost:9966/')
+  {
+setTimeout(
+function(){
+document.getElementById("rw0").style.display='none';
+document.getElementById("rw1").style.display='none';
+document.getElementById("rw2").style.display='none';
+document.getElementById("rw3").style.display='none';
+document.getElementById("rw4").style.display='none';
+document.getElementById("rw5").style.display='none';
+document.getElementById("rw6").style.display='none';
+
+},7500);
+}
+if(window.location == 'http://localhost:9966/#init')
+{
+  setTimeout(
+  function(){
+  document.getElementById("rw0").style.display='none';
+  document.getElementById("rw1").style.display='none';
+  document.getElementById("rw2").style.display='none';
+  document.getElementById("rw3").style.display='none';
+  document.getElementById("rw4").style.display='none';
+  document.getElementById("rw5").style.display='none';
+  document.getElementById("rw6").style.display='none';
+
+
+},750);
+
+}
+}
+
+function sent(){
+  setTimeout(
+    function(){
+  var x = document.getElementById("yourmessage");
+  x.value="";
+},150);
+}
+
+function condisp(){
+  document.getElementById("rw5").style.display='';
+  //document.getElementById('lbl').innerHTML="hyyyy";
+
+}
+
+function ex(button){
+
+  document.write();
+
+  // window.location.assign("http://localhost/depolice/logout.php");
+
+	if(confirm("Are you sure you want to exit Virtual Room?"))
+	   {
+
+         history.go(-1);
+	   }
+	   return false;
+
+}
+
+
+
+
+
+
+</script>
+
+    <style media="screen">
+
+    textarea{
+      padding: 5px;
+      border-radius: 0.25rem;
+      border: 1px solid #281859;
+
+    }
+    #btn{
+        width: 25%;
+        height: 50px;
+        color: white;
+        background-color: #281859;
+        border: 2px solid #c1c1c1;
+        border-radius: 8%;
+    }
+
+    #btn:hover{
+      width: 25%;
+      height: 50px;
+      color: white;
+      background-color:#281859;
+      border: 2px solid #c1c1c1;
+      text-shadow: 1.5px 1.5px 3px #eded67de;
+      border-radius: 8%;
+    }
+
+    #topheader{
+      background-color: #fdd841;
+        width: 100%;
+      height: auto;
+      border-bottom: 2px solid #281859;
+      border-radius:0 0 2.5% 2.5%;
+    }
+
+    #message{
+      display: block;
+      margin: 2% 10%;
+      color: #281859;
+      font-size:large;
+    }
+
+video{
+  /* width: 100%; */
+}
+    #vid{
+      padding: 0 15%;
+      width: 100%;
+
+    }
+
+table td{
+  padding: 0.35rem !important;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="sticky-top">
+    <!-- ****************** top header section *************************************-->
+
+    <section id="topheader">
+        <div class="container">
+          <div class="row">
+          <header>
+            <div class="col-xs-6 col-sm-3 col-md-2 col-lg-1" >
+              <img src="http://localhost/criminaljustice/img/criminal_justice.png" alt="" class="" width="110px" height="110px">
+                </div>
+                <div class="col-xs-6 col-sm-9 col-md-10 col-lg-11">
+                <h1 class="text-center heading text-responsive">complaint Registration portal,<br> gujarat police</h1>
+                </div>
+                </header>
+
+    <hr>
+              </div>
+
+          </div>
+
+    </section>
+</div>
+
+<div class="container border" style=" margin-top:-3%; margin-bottom: -5%;padding:3% 10% !important;">
+<form class="" action="index.html" method="post">
+  <table id="myTable" class="table table-border">
+
+
+  <thead>
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+        <tr id="rw" style="display:none;">
+
+         <td colspan="4" align="left" style="color: #281859; padding:1% 1.3%;font-size: 1.25em;font-weight: normal;">
+         <b style="color:RED;">Note:</b>&nbsp; Looks like the conference has been exited from the other side.<br>
+        </td>
+        </tr>
+
+
+
+    <tr id="rw0">
+
+     <td colspan="4" align="left" style="color: #281859; padding:1% 1.3%;font-size: 1.25em;font-weight: normal;">
+     <b>Note:</b> Your ID will be generated automatically, enter other ID to complete video conference request.<br><b style="color:RED;">Warning:</b>&nbsp Both ID's will not remain visible after connection request is established.
+
+    </td>
+    </tr>
+  </div>
+  </div>
+
+  </thead>
+
+  <tbody>
+    <div class="row">
+    <tr id="rw1">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+      <td colspan="2">
+        <label for="yourid">Your ID:</label>
+				<font color="RED">*</font>
+        <br>
+      </td>
+    </div>
+
+    </tr>
+  </div>
+
+  <div class="row">
+  <tr id="rw2">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+    <td colspan="2">
+      <textarea id="yourid"  name="name" rows="4" cols="120"></textarea><br>
+
+    </td>
+  </div>
+
+  </tr>
+  </div>
+
+  <!-- send mail -->
+	<div class="row">
+	<tr id="rw6" rowspan="" style="width:100%; display:table">
+
+	    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+
+	    <td colspan="2" style="width: 50%;">
+	      <label id='lbl' for="email">Official Email ID
+	        <font color="RED">*</font>
+	        </label>
+          <p id="newp"></p>
+	    </td>
+			</div>
+
+	      <!--  ********************************* row 6 col 4 input pin********************************************-->
+				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+
+	      <td colspan="" style="display:none;vertical-align:middle;width:50%;">
+	<input style="display:none;padding: 10px;	border-radius: 0.25rem;	border: 1px solid #281859; width:95% !important;" type="email" required style="" id="email" name="email" value="" placeholder="Email Address">
+	    </td>
+			</div>
+
+			<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+
+
+			<td colspan="1">
+		    <button style="width:45%;margin-left:200px; padding:12px 0;" type="button" onclick="Share()" id="share" >Share</button>
+
+		  </td>
+
+	    </div>
+
+		</tr>
+
+	</div>
+
+
+
+
+<!-- second row of other id -->
+  <div class="row">
+  <tr id="rw3">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+    <td colspan="">
+      <label for="otherid">Other ID:</label>
+			<font color="RED">*</font>
+    </td>
+  </div>
+
+  </tr>
+</div>
+
+<div class="row">
+<tr id="rw4">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+  <td colspan="">
+    <textarea oninput="condisp()" id="otherid" name="name" rows="4" cols="120"></textarea><br>
+
+  </td>
+</div>
+
+</tr>
+</div>
+
+<!-- third row for connect button -->
+<div class="row">
+<tr id="rw5" style="display:none; text-align:right">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+  <td colspan="">
+    <button style="padding:12px 0;" onclick="display()" type="button" id="connect" name="button">Connect</button><br>
+
+  </td>
+</div>
+
+</tr>
+</div>
+
+<div class="row">
+  <tr id="disp" style="display:none;">
+<td style="width:100% !important;">
+    <div class="row" id="vid">
+
+    </div>
+    </td>
+  </tr>
+</div>
+
+
+
+<!-- fourth row of message -->
+<div class="row">
+<tr id="disp1" style="display:none;">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+  <td style="width:34%;" colspan="">
+    <label for="">Enter message here:</label>
+
+  </td>
+
+
+<td colspan="">
+  <textarea id="yourmessage" name="name" rows="2" cols="60"></textarea><br>
+
+</td>
+
+
+<td colspan="" style="text-align:right">
+  <button type="button" style="height:100%; width:300%; margin-left: 10px; padding:25% 0;" onclick="sent()" id="send" name="button">Send</button>
+
+</td>
+
+
+</div>
+</tr>
+</div>
+
+
+
+
+
+<!-- <div class="row">
+<tr id="disp2" style="display:none;">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+  <td colspan="">
+    <textarea id="yourmessage" name="name" rows="2" cols="120"></textarea><br>
+
+  </td>
+</div>
+
+</tr>
+</div> -->
+
+
+
+<!-- fifth  row for send button -->
+<!-- <div class="row">
+<tr id="disp3" style="display:none; text-align:right">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+  <td colspan="" style="text-align:right">
+    <button type="button" id="send" name="button">Send</button>
+
+  </td>
+</div>
+
+</tr>
+</div> -->
+
+
+
+<!--
+fifth row for exit button -->
+
+<div class="row">
+<tr style="text-align:center">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+  <td colspan="">
+    <button style="width:25%; padding:12px 0;" type="button" id="exit" onclick="ex(self)" name="button">Exit</button>
+
+  </td>
+</div>
+
+</tr>
+</div>
+
+
+
+  <!--
+  <textarea id="otherid" name="name" rows="8" cols="80"></textarea><br>
+
+  <textarea name="name" id="yourmessage" rows="8" cols="80"></textarea>
+   -->
+
+</tbody>
+
+</table>
+
+</form>
+
+
+    <div id="disp4" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="display:none;">
+      <label style="font-weight:600;color:#281859;font-size:1.25em;" for="">Messages received:</label>
+
+      <pre id="message"></pre>
+
+      <script type="text/javascript" src="bundle.js">
+
+      </script>
+
+
+    </div>
+
+
+
+</div>
+    <!-- <pre id="message"></pre>
+
+
+    <script type="text/javascript" src="bundle.js">
+
+    </script> -->
+
+    <!-- ****************** footer section *************************************-->
+
+    <footer style="margin-top:2%;">
+      <div class="container-fluid">
+
+
+    <section id="foot" style="margin-bottom:0;">
+    <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+    <p class="text-center"> <br> &copyCopyright 2019 gujaratpolice.org / All rights reserved
+    Disclaimer &nbsp <br>Concept , Content and Maintenance: <span style="color:#ffd300 !important;     text-shadow: 1px 2.5px 1.5px #281859;">Gujarat Police</span> <br></p>
+    </div>
+
+    </div>
+    </section>
+
+    </div>
+    </footer>
+
+
+  </body>
+</html>

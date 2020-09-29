@@ -1,0 +1,18 @@
+{
+  "name": "videochat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "budo index.js:bundle.js"
+  },
+  "author": "Dhruv Rana",
+  "license": "ISC",
+  "devDependencies": {
+    "budo": "^11.6.3",
+    "watchify": "^3.11.1"
+  },
+  "dependencies": {
+    "simple-peer": "^9.6.2"
+  }
+}
